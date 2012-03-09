@@ -52,7 +52,8 @@ static iToastSettings *sharedSettings = nil;
 	UIButton *v = [UIButton buttonWithType:UIButtonTypeCustom];
 	v.frame = CGRectMake(0, 0, textSize.width + 10, textSize.height + 10);
 	label.center = CGPointMake(v.frame.size.width / 2, v.frame.size.height / 2);
-	[v addSubview:label];
+	[v addSubview:label]; ...
+	[label release];
 	
 	v.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
 	v.layer.cornerRadius = 5;
